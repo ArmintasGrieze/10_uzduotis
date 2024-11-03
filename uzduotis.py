@@ -18,6 +18,9 @@ class Automobilis:
 
 class Elektromobilis(Automobilis):
 
+    def kraunasi(self):
+        return "Baterija kraunasi"
+
     def pildyti_degalu(self):
         return "Baterija ikrauta"
 
@@ -33,5 +36,5 @@ print(
 print()
 ev_automobilis = Elektromobilis(2013, "Nissan", "Elektra")
 print(
-    f"{ev_automobilis.vaziuoti()}, {ev_automobilis.stoveti()}, {ev_automobilis.pildyti_degalu()}, {ev_automobilis.vaziuoti_autonomiskai()}"
+    f"{ev_automobilis.kraunasi()} {ev_automobilis.vaziuoti()}, {ev_automobilis.stoveti()}, {ev_automobilis.pildyti_degalu()}, {ev_automobilis.vaziuoti_autonomiskai()}"
 )
